@@ -1,10 +1,10 @@
 <template>
     <div>
       <h1>Delete User</h1>
-      <form @submit.prevent="deleteUser">
-        <input type="number" v-model="userId" placeholder="Enter user ID">
-        <button type="submit">Delete</button>
-      </form>
+      <div>
+        <v-text-field label="User ID" type="number" v-model="userId" placeholder="Enter user ID"></v-text-field>
+        <v-btn @click="deleteUser()">Delete</v-btn>
+      </div>
       <div v-if="deleted">
         <h2>Deleted</h2>
       </div>

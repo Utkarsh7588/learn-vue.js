@@ -1,11 +1,11 @@
 <template>
     <div>
       <h1>Update User</h1>
-      <form @submit.prevent="updateUser">
-        <input type="number" v-model="updateUserId" placeholder="Enter user ID">
-        <input type="text" v-model="updateUserName" placeholder="Enter new name">
-        <button type="submit">Update User</button>
-      </form>
+      <div>
+        <v-text-field type="number" v-model="updateUserId" placeholder="Enter user ID" label="userID"></v-text-field>
+        <v-text-field type="text" v-model="updateUserName" placeholder="Enter new name" label="Name"></v-text-field>
+        <v-btn @click="updateUser()">Update User</v-btn>
+      </div>
   
       <div v-if="updatedUser">
         <h2>{{ updatedUser }}</h2>

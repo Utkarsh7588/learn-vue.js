@@ -1,11 +1,11 @@
 <template>
   <h1>Home</h1>
   <div class="button-container">
-    <button @click="goToListUsers" class="btn">List Users</button>
-    <button @click="goToFindUser" class="btn">Find User</button>
-    <button @click="goToUpdateUser" class="btn">Update User</button>
-    <button @click="goToDeleteUser" class="btn">Delete User</button>
-    <button @click="goToCreateUser" class="btn">Create User</button>
+    <v-btn @click="goToListUsers" class="btn" color="green">List Users</v-btn>
+    <v-btn @click="goToFindUser" class="btn" color="green">Find User</v-btn>
+    <v-btn @click="goToUpdateUser" class="btn" color="green">Update User</v-btn>
+    <v-btn @click="goToDeleteUser" class="btn" color="green">Delete User</v-btn>
+    <v-btn @click="goToCreateUser" class="btn" color="green">Create User</v-btn>
   </div>
 </template>
 
@@ -60,10 +60,5 @@ body {
   cursor: pointer;
 }
 
-.btn:hover {
-  background-color: white;
-  color: black;
-  border: 10px solid white;
-  
-}
+
 </style>

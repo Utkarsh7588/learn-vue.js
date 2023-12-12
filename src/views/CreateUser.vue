@@ -1,10 +1,10 @@
 <template>
     <div>
         <h1>Create User</h1>
-        <form @submit.prevent="createUser">
-            <input type="text" v-model="newUserName">
-            <button type="submit">Create User</button>
-        </form>
+        <div>
+            <v-text-field type="text" v-model="newUserName" lable="Name"></v-text-field>
+            <v-btn @click="createUser()">Create User</v-btn>
+        </div>
     </div>
     <div v-if="created">
         <h2>
